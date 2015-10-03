@@ -1,5 +1,6 @@
 body,html {
 	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .jumbotron {
@@ -7,7 +8,24 @@ body,html {
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
+
+	width: 100%;
+	height: 40px;
+
+	margin: 0;
+	line-height: 40px;
+
+	background: #fff;
+}
+
+.disclaimer {
+	font-style: italic;
+}
+
+.statement {
+	margin-top: 30px;
+	text-align: center;
 }
 
