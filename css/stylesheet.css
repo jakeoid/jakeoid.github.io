@@ -1,0 +1,12 @@
+body,html {
+	padding-top: 25px;
+}
+
+.jumbotron {
+	background: transparent;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+}
