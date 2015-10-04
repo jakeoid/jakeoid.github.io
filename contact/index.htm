@@ -13,6 +13,7 @@
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/contact.js"></script>
 </head>
 
 <body>
@@ -59,13 +60,28 @@
 
 
     <div class="container">
-        <div class="jumbotron">
-            <div class="container">
-                <h1>Haha, oops!</h1>
-                <p><br>This part of the website can get dodgy so i've temporarily disabled it. I'll have other ways to contact me at a later date but at this time its broken.</p>
-            </div>
-        </div>
 
+        <br>
+
+        <div id="emailError" class="alert alert-info alert-none" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <b>Oops!</b> You forgot to put your email address, please resubmit the form once you have fixed that.</div>
+        <div id="nameError" class="alert alert-info alert-none" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <b>Oops!</b> You forgot to put your name, please resubmit the form once you have fixed that.</div>
+        <div id="inquiryError" class="alert alert-info alert-none" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <b>Oops!</b> You forgot to put your inquiry, please resubmit the form once you have fixed that.</div>
+
+        <form role="form" id="contact" onsubmit="return checkForm();" method="post" action="mailto:thisprobablyshouldntbeanemail@gmail.com">
+            <div class="form-group">
+                <label for="email">Your Email Address.</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="name">Your Name.</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="inquiry">Inquiry / Question.</label>
+                <textarea rows="8" class="form-control" id="inquiry"></textarea>
+            </div>
+            <button type="text" class="btn btn-default">Submit</button>
+        </form>
 
         <footer>
             <br>

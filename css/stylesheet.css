@@ -8,6 +8,11 @@ body,html {
 	padding-top: 25px;
 }
 
+.form-control:focus {
+    border:1px solid #97d6eb;
+    box-shadow: none;
+}
+
 /* *************************** *
  * 
  *  /
@@ -57,4 +62,8 @@ body,html {
 	width: 12%;
 
 	text-align: center;
+}
+
+.alert-none {
+	display: none;
 }
