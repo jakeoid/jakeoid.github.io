@@ -8,6 +8,10 @@ body,html {
 	padding-top: 25px;
 }
 
+.statement a, .footer a {
+	font-weight: bold;
+}
+
 .form-control:focus {
     border:1px solid #97d6eb;
     box-shadow: none;
