@@ -28,12 +28,12 @@ a:hover, a:focus {
 }
 
 .project-button {
-	background: #00c0ff;
+	background: #00c0ff !important;
 	border: none;
 }
 
 .project-button:hover, .project-button:focus, .project-button:active {
-	background: #00a5db;
+	background: #00a5db !important;
 	border: none;
 }
 
