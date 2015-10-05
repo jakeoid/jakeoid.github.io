@@ -6,6 +6,12 @@
 
 body,html {
 	padding-top: 25px;
+
+	text-align: justify;
+}
+
+h1 {
+	padding: 15px;
 }
 
 .statement a, .footer a {
@@ -20,6 +26,17 @@ body,html {
 a:hover, a:focus {
 	text-decoration: none;
 }
+
+.project-button {
+	background: #00c0ff;
+	border: none;
+}
+
+.project-button:hover, .project-button:focus, .project-button:active {
+	background: #00a5db;
+	border: none;
+}
+
 
 /* *************************** *
  * 
