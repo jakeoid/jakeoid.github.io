@@ -71,7 +71,7 @@
         <div id="nameError" class="alert alert-info alert-none" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <b>Oops!</b> You forgot to put your name, please resubmit the form once you have fixed that.</div>
         <div id="inquiryError" class="alert alert-info alert-none" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <b>Oops!</b> You forgot to put your inquiry, please resubmit the form once you have fixed that.</div>
 
-        <form role="form" id="contact" onsubmit="return checkForm();" method="post" action="mailto:thisprobablyshouldntbeanemail@gmail.com">
+        <form role="form" id="contact" onsubmit="return checkForm();" method="post" action="mailto:thisprobablyshouldntbeanemail@gmail.com" enctype="text/plain">
             <div class="form-group">
                 <label for="email">Your Email Address.</label>
                 <input type="email" class="form-control" id="email">
