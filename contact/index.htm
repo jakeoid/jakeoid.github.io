@@ -4,6 +4,10 @@
 	<!-- Meta -->
     <title>Jakeoid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Jakeoid is the place where Jake hosts his smaller projects.">
+    <meta name="keywords" content="Jakeoid,Projects">
+    <meta name="author" content="Jakeoid">
 
     <!-- CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -67,10 +71,6 @@
 
         <br>
 
-        <div id="emailError" class="alert alert-info alert-none" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <b>Oops!</b> You forgot to put your email address, please resubmit the form once you have fixed that.</div>
-        <div id="nameError" class="alert alert-info alert-none" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <b>Oops!</b> You forgot to put your name, please resubmit the form once you have fixed that.</div>
-        <div id="inquiryError" class="alert alert-info alert-none" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <b>Oops!</b> You forgot to put your inquiry, please resubmit the form once you have fixed that.</div>
-
         <form role="form" id="contact" onsubmit="return checkForm();" method="post" action="mailto:thisprobablyshouldntbeanemail@gmail.com" enctype="text/plain">
             <div class="form-group">
                 <label for="email">Your Email Address.</label>
@@ -84,11 +84,10 @@
                 <label for="inquiry">Inquiry / Question.</label>
                 <textarea rows="8" class="form-control" id="inquiry"></textarea>
             </div>
-            <center><button type="text" class="btn btn-default">Submit</button></center>
+            <button type="text" class="btn btn-default">Submit</button>
         </form>
 
         <footer>
-            <br>
             <p class="footer">Websites Content &copy; 2015 Jakeoid.</p>
         </footer>
     </div>
