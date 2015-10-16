@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta -->
+    <title>Jakeoid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Jakeoid is the place where Jake hosts his smaller projects.">
+    <meta name="keywords" content="Jakeoid,Projects">
+    <meta name="author" content="Jakeoid">
+
+    <!-- CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../css/simplex.css" rel="stylesheet" type="text/css">
+    <link href="../../css/stylesheet.css" rel="stylesheet" type="text/css">
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../../js/resistor_calc.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="http://jakeoid.com">Jakeoid</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="http://jakeoid.com/">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://jakeoid.com/contact">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+                        <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Video Games.</li>
+                            <li>
+                                <a href="http://jakeoid.com/project/handheld">Handheld Comp. Chart</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Electronics.</li>
+                            <li>
+                                <a href="http://jakeoid.com/project/resistor_calc_4">Resistor Calculator (4 Band).</a>
+                            </li>
+                            <li>
+                                <a href="http://jakeoid.com/project/resistor_calc_4">Resistor Calculator (5 Band).</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Resistor Calculator. <small>4 Band</small></h1>
+        </div>
+
+
+        <p>The following shows the compatiablity of the consoles as to there game. Really and truely its a simple chart and can be used to reference when choosing to purchase a game from a plethora of Online Vendors, or even just your Local Store. A mobile version of this website is avaliable but isn't tested very well.</p>
+
+        <p>So how does the following chart apply to you? Look at the cartridge of the game you have purchased or are looking to purchase. Look through the images find the serial code. There's different locations for each of these but for the most part there in the bottom right corner below the 'Official Nintendo Seal' on licensed games. </p>
+
+        <br>
+
+
+<div class="row">
+  <div class="col-md-4">
+
+    <select id="1stBand" class="form-control">
+            <option value="select"          >   -- Select 1st Band --</option>
+            <option value="null" disabled   >               </option>
+            <option value="black"           >   0 Black.      </option>
+            <option value="brown"           >   1 Brown.      </option>
+            <option value="red"             >   2 Red.        </option>
+            <option value="orange"          >   3 Orange.     </option>
+            <option value="yellow"          >   4 Yellow.     </option>
+            <option value="green"           >   5 Green.      </option>
+            <option value="blue"            >   6 Blue.       </option>
+            <option value="violet"          >   7 Violet.     </option>
+            <option value="grey"            >   8 Grey.       </option>
+            <option value="white"           >   9 White.      </option>
+            <option value="gold" disabled   >   0 Gold.       </option>
+            <option value="silver" disabled >   0 Silver.     </option>
+        </select>
+
+    </br>
+
+  </div>
+  <div class="col-md-4">
+
+    <select class="form-control">
+            <option value="select"          >   -- Select 2nd Band --</option>
+            <option value="null" disabled   >               </option>
+            <option value="black"           >   0 Black.      </option>
+            <option value="brown"           >   1 Brown.      </option>
+            <option value="red"             >   2 Red.        </option>
+            <option value="orange"          >   3 Orange.     </option>
+            <option value="yellow"          >   4 Yellow.     </option>
+            <option value="green"           >   5 Green.      </option>
+            <option value="blue"            >   6 Blue.       </option>
+            <option value="violet"          >   7 Violet.     </option>
+            <option value="grey"            >   8 Grey.       </option>
+            <option value="white"           >   9 White.      </option>
+            <option value="gold" disabled   >   0 Gold.       </option>
+            <option value="silver" disabled >   0 Silver.     </option>
+        </select>
+
+    </br>
+
+  </div>
+  <div class="col-md-4">
+
+    <select class="form-control">
+            <option value="select"          >   -- Select 3rd Band --</option>
+            <option value="null" disabled   >                 </option>
+            <option value="black"           >   0 Black.      </option>
+            <option value="brown"           >   1 Brown.      </option>
+            <option value="red"             >   2 Red.        </option>
+            <option value="orange"          >   3 Orange.     </option>
+            <option value="yellow"          >   4 Yellow.     </option>
+            <option value="green"           >   5 Green.      </option>
+            <option value="blue"            >   6 Blue.       </option>
+            <option value="violet"          >   7 Violet.     </option>
+            <option value="grey"            >   8 Grey.       </option>
+            <option value="white"           >   9 White.      </option>
+            <option value="gold" disabled   >   0 Gold.       </option>
+            <option value="silver" disabled >   0 Silver.     </option>
+        </select>
+
+    </br>
+
+    </div>
+</div>
+
+        <br />
+
+        <select class="form-control">
+            <option value="select"          >   -- Select Multiplier --</option>
+            <option value="null" disabled   >                 </option>
+            <option value="black"           >   Black - 1 &Omega;.      </option>
+            <option value="brown"           >   Brown - 10 &Omega;.     </option>
+            <option value="red"             >   Red - 100 &Omega;.      </option>
+            <option value="orange"          >   Orange - 1K &Omega;.    </option>
+            <option value="yellow"          >   Yellow - 10K &Omega;.   </option>
+            <option value="green"           >   Green - 100K &Omega;.   </option>
+            <option value="blue"            >   Blue - 1M &Omega;.      </option>
+            <option value="violet"          >   Violet - 10M &Omega;.   </option>
+            <option value="gold"            >   Gold - 0.1 &Omega;.     </option>
+            <option value="silver"          >   Silver - 0.01 &Omega;.  </option>
+        </select>
+
+        <br />
+
+        <select class="form-control">
+            <option value="select"          >   -- Select Tolerance --</option>
+            <option value="brown"           >   Brown - &plusmn; 1%     </option>
+            <option value="red"             >   Red - &plusmn; 2%       </option>
+            <option value="green"           >   Green - &plusmn; 0.5%   </option>
+            <option value="blue"            >   Blue - &plusmn; 0.25%   </option>
+            <option value="violet"          >   Violet - &plusmn; 0.10% </option>
+            <option value="grey"            >   Grey - &plusmn; 0.05%   </option>
+            <option value="gold"            >   Gold - &plusmn; 5%      </option>
+            <option value="silver"          >   Silver - &plusmn; 10%   </option>
+        </select>
+
+        <br />
+
+        <center>
+            Your resistor will resist.. <br><br><b><label id="ohmz">0</label> &Omega; Ohmz.</b>
+        </center>
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Jakeoid Footer Global -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:100px"
+     data-ad-client="ca-pub-8987365665099359"
+     data-ad-slot="1629052823"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        <footer>
+            <br>
+            <p class="footer">Websites Content &copy; 2015 Jakeoid.</p>
+        </footer>
+    </div>
+</body>
+</html>
