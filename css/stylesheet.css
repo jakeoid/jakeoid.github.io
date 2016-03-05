@@ -1,1 +1,32 @@
-body,html{padding-top:25px;}h1{padding:15px;}.statement a,.footer a{font-weight:bold;}.form-control:focus{border:1px solid #97d6eb;box-shadow:none;}a:hover,a:focus{text-decoration:none;}.jumbotron{background:transparent;}.footer{width:100%;height:20px;padding:10px 0px 50px 0px;line-height:40px;}.disclaimer{font-style:italic;padding: 10px 0px 10px 0px;}.statement{margin-top:30px;text-align:center;}.console_name{width:16%;}.serial{width:12%;text-align:center;}.alert-none{display:none;}.ad{padding: 0px;width:320px;text-align: center;margin: 0 auto;}.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{background: #f2f2f2;color: #262626;}.col-md-7{text-align: justify;}label{text-transform: uppercase;}.navbar-collapse{border-top: none;-webkit-box-shadow:none;box-shadow: none;}.description{text-align: justify;}.halfwidth{width: 50%;margin: auto;}
+body,html{padding-top:25px;}h1{padding:15px;}.statement a,.footer a{font-weight:bold;}.form-control:focus{border:1px solid #97d6eb;box-shadow:none;}a:hover,a:focus{text-decoration:none;}.jumbotron{background:transparent;}.footer{width:100%;height:20px;padding:10px 0px 50px 0px;line-height:40px;}.disclaimer{font-style:italic;padding: 10px 0px 10px 0px;}.statement{margin-top:30px;text-align:center;}.console_name{width:16%;}.serial{width:12%;text-align:center;}.alert-none{display:none;}.ad{padding: 0px;width:320px;text-align: center;margin: 0 auto;}.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{background: #f2f2f2;color: #262626;}.col-md-7{text-align: justify;}label{text-transform: uppercase;}.navbar-collapse{border-top: none;-webkit-box-shadow:none;box-shadow: none;;}.description{text-align: justify;}.halfwidth{width: 50%;margin: auto;}.navbar{border:none;}
+
+.picross-solution {
+	width: 100%;
+	min-height: 200px;
+
+	border: 5px solid #f2f2f2;
+
+	line-height: 150px;
+	text-align: center;
+
+	position: relative;
+
+	margin: 0px 0px 10px 0px;
+}
+
+.levelname {
+	position: absolute;
+	bottom: 0;
+
+	text-align: center;
+	font-weight: bold;
+
+	height: 30px;
+	width: 100%;
+
+	line-height: 30px;
+
+	background: url('./_png/pattern_bg.png');
+
+	background: #f2f2f2;
+}

@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+
+.author {
+  position:absolute;
+  bottom:0;
+  right:0;
+
+  padding: 15px;
+  text-align: right;
+}
+.score {
+  position:absolute;
+  bottom:0;
+  left:0;
+
+  padding: 15px;
+}
+body,html{
+  background: #1b1b1b;
+  color: #fff;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  text-align: justify;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.yep {
+  display: none;
+  -webkit-transition: none;
+  display: none;
+  transition: none;
+
+  position: relative;
+  height: 50px;
+  padding: 5px 20px 5px 20px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-align: center;
+  color: #fff;
+  background: #36ff00;
+}
+.nope {
+  line-height: 1.5;
+  -webkit-transition: none;
+  display: none;
+  transition: none;
+
+  position: relative;
+  height: 50px;
+  padding: 5px 20px 5px 20px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-align: center;
+  color: #fff;
+  background: #ff6000;
+}
+.items {
+  display: none;
+}
+.test-skills {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.character {
+
+  font-size: 3.4em;
+}
+
+.masu-symbol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.submit {
+  display: none;
+}
+input {
+  outline: none;
+  border: 0;
+  background: #fff;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 2px;
+}
+*:focus {
+    outline: none;
+}
+.container {width: 50%;margin: auto;position: relative;}
+.
+
