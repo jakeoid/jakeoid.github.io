@@ -5,7 +5,7 @@
  }
 
  function updateValue() {
- 	if(document.getElementById('width')){
+ 	if(document.getElementById('width') !== null){
     	document.getElementById('width').innerHTML = window.innerWidth;
     	document.getElementById('height').innerHTML = window.innerHeight;
     }
