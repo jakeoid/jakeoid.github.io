@@ -62,8 +62,10 @@
         <p>Please make note that this also will only work with the Custom Pokémon trainer names (NEW NAME) and not the default trainers names, for example.. Red, Blue, Ash, Gary, etc. As they will have different Pokémon as to what this generator says, for more accurate information as to why this is, and to see which Pokemon you will recieve if this is your name please see <a href="http://bulbapedia.bulbagarden.net/wiki/Old_man_glitch#Preset_names">Bulbapedia</a> for more accurate information.</p>
 
         <br>
-            <input style="width:80%;float:left;" placeholder="name here" class="form-control" type="text" maxlength="7" id="name"></input>
-            <button style="width:20%;float:right;" class="form-control" onclick="refreshName()">Go</button>
+                <input id="name" class="form-input-oldman" placeholder="Player Name" type="text" maxlength="7" id="name"></input><br><br>
+
+                <button class="submit" id="form-submit-oldman" onclick="refreshName()">Submit</button>
+            
         <br><br><br>
 
         <h2><label style="text-transform: none !important;" id="fixedname">(null)</label><br /></h2>
@@ -76,10 +78,10 @@
 
                 <tr>
 
-                    <td><label style="" class="species" id="char_species_1">(null)</label></td>
-                    <td><label style="text-transform: none !important;" class="species" id="char_species_2">(null)</label></td>
-                    <td><label style="text-transform: none !important;" class="species" id="char_species_3">(null)</label></td>
-                    <td><label style="text-transform: none !important;" class="species" id="">MissingNo</label></td>
+                    <td style="width: 25%;"><label style="" class="species" id="char_species_1">(null)</label></td>
+                    <td style="width: 25%;"><label style="text-transform: none !important;" class="species" id="char_species_2">(null)</label></td>
+                    <td style="width: 25%;"><label style="text-transform: none !important;" class="species" id="char_species_3">(null)</label></td>
+                    <td style="width: 25%;"><label style="text-transform: none !important;" class="species" id="">MissingNo</label></td>
 
                 </tr>
 
@@ -114,7 +116,7 @@
                     <div class="footer"> <!-- footer -->
 
         <div style="float:right;"><!-- social -->
-            <a href="#"><i class="fa fa-twitter-square fa-1x"></i> &nbsp;jakeoid_</a>
+            <a href="http://twitter.com/jakeoid_"><i class="fa fa-twitter-square fa-1x"></i> &nbsp;jakeoid_</a>
         </div><!-- /social -->
 
         <div style="float:left;"><!-- copyright -->
