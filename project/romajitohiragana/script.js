@@ -108,7 +108,10 @@ function check()
   	.replace(/e/gi, 'え')
   	.replace(/o/gi, 'お');
 
-  
+  if(document.getElementById("remove_spaces").checked == true){
+    var n1 = n1.replace(/\s+/g, '');
+  }
+
   var n2 = document.getElementById('output');
 
   n2.value = n1;

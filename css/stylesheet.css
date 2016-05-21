@@ -65,7 +65,8 @@ h2 > small 												{background: #1d1d1d;color: #fff;margin-left:15px;padding
 table 													{width: 100%;border: none;}
 
 /** Input **/
-input 													{border: 1px solid #1d1d1d;height: 50px;text-indent: 25px;}
+input[type=text] 										{border: 1px solid #1d1d1d;height: 50px;text-indent: 25px;}
+.checkbox												{background: #000 !important;}
 textarea												{border: 1px solid rgba(0,0,0,0.1);border-radius: 5px;width: 100%;min-height: 200px;font-size: 18px;}
 
 ::-webkit-input-placeholder 							{color: #e6e6e6;}
