@@ -66,11 +66,15 @@ table 													{width: 100%;border: none;}
 
 /** Input **/
 input 													{border: 1px solid #1d1d1d;height: 50px;text-indent: 25px;}
+textarea												{border: 1px solid rgba(0,0,0,0.1);border-radius: 5px;width: 100%;min-height: 200px;font-size: 18px;}
 
 ::-webkit-input-placeholder 							{color: #e6e6e6;}
 :-moz-placeholder 										{color: #e6e6e6;}
 ::-moz-placeholder							 			{color: #e6e6e6;}
 :-ms-input-placeholder 									{color: #e6e6e6;}
+
+/** Button **/
+button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30px;color: #fff;}
 
 /** Old Man **/
 .form-input-oldman										{width: 100%;border: 1px solid #f7f7f7;color: #1d1d1d;font-size:30px;text-align: center;font-family: 'Open Sans', sans-serif;}
