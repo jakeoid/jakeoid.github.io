@@ -2,6 +2,7 @@ function check()
 {
   var n1 = document.getElementById('input').value
 
+//    .replace(/([a-zA-Z]).*?\1/, 'っ')
   	.replace(/kya/gi, 'きゃ')
   	.replace(/kyu/gi, 'きゅ')
   	.replace(/kyo/gi, 'きょ')
@@ -104,7 +105,7 @@ function check()
   	.replace(/wa/gi, 'わ')
   	.replace(/wa/gi, 'を')
   	.replace(/n/gi, 'ん')
-  	.replace(/m/gi, 'ん')
+  	.replace(/nn/gi, 'ん')
   	.replace(/a/gi, 'あ')
   	.replace(/i/gi, 'い')
   	.replace(/u/gi, 'う')
