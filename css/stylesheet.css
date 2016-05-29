@@ -90,8 +90,8 @@ button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30
 
 /** Mobile **/
 @media screen and (max-width: 480px) {
-	.container 							{width: calc(100% - 80px);padding: 0;padding-top: 100px;margin: 0px 40px 0px 40px;}
-	.sidebar 							{position: fixed;height: 90px;width: 100%;background: url('./img/bg.png'), #1d1d1d;background-repeat: no-repeat;background-size: 100%;background-position:top top;color: #fff;}
+	.container 							{width: calc(100% - 80px);padding: 0;padding-top: 100px;margin: 0px 45px 0px 40px;}
+	.sidebar 							{position: fixed;height: 80px;width: 100%;background: url('./img/bg.png'), #1d1d1d;background-repeat: no-repeat;background-size: 100%;background-position:top top;color: #fff;}
 	.icon-menu 							{color: #fff;position: absolute;top: 0; left: calc(50% - 120px);;}
 	li 									{display: inline;padding: none;margin: 10px 15px 0px 15px;}
 }
