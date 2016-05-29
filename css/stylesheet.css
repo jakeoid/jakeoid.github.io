@@ -88,6 +88,11 @@ button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30
 
 #species												{font-weight: bold;font-size: 32px;}
 
+/** Ad **/
+
+@media(min-width: 500px) { .ad { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .ad { width: 728px; height: 90px; } }
+
 /** Mobile **/
 @media screen and (max-width: 480px) {
 	.container 							{width: calc(100% - 80px);padding: 0;padding-top: 100px;margin: 0px 45px 0px 40px;}
