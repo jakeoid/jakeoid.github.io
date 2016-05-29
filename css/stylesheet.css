@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6										{margin: 0;padding: 0;}
 
 /** Container **/
 
-.container 												{width: calc(100% - 200px);padding: 10px 50px 10px 0px;float: right;}
+.container 												{width: calc(100% - 200px);padding: 10px 50px 10px 0px;float: right;font-size: 18px;text-align: justify;}
 .title 													{margin: 0px 0px 0px 25px;font-size: 64px;}
 .intro													{font-size: 23px;padding: 0px 0px 25px 0px;}
 
@@ -65,7 +65,7 @@ h2 > small 												{background: #1d1d1d;color: #fff;margin-left:15px;padding
 table 													{width: 100%;border: none;}
 
 /** Input **/
-input[type=text] 										{border: 1px solid #1d1d1d;height: 50px;text-indent: 25px;}
+input[type=text] 										{border:none;height: 50px;text-indent: 25px;}
 .checkbox												{background: #000 !important;}
 textarea												{border: 1px solid rgba(0,0,0,0.1);border-radius: 5px;width: 100%;min-height: 200px;font-size: 18px;}
 
@@ -78,8 +78,8 @@ textarea												{border: 1px solid rgba(0,0,0,0.1);border-radius: 5px;width:
 button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30px;color: #fff;}
 
 /** Old Man **/
-.form-input-oldman										{width: 100%;border: 1px solid #f7f7f7;color: #1d1d1d;font-size:30px;text-align: center;font-family: 'Open Sans', sans-serif;}
-#form-submit-oldman										{width: 101%;height: 50px;line-height: 50px;background: #1d1d1d;border: 0;color: #fff;}
+.form-input-oldman										{width: calc(100% - 2px);color: #1d1d1d;font-size:30px;text-align: center;font-family: 'Open Sans', sans-serif !important;}
+#form-submit-oldman										{width: calc(100%);height: 50px;line-height: 12px;background: #1d1d1d;border: 0;color: #fff;text-align: center;}
 
 #compatibility_table > thead > tr						{height: 50px !important;background: #000;margin: 0;padding: 0 !important;border-spacing: 0px;background: #1d1d1d;color: #fff;line-height: 50px;	}
 #compatibility_table > tbody > tr						{height: 35px !important;background: #000;margin: 0;padding: 0 !important;border-spacing: 0px;background: #fff;color: #1d1d1d;line-height: 35px;	}
