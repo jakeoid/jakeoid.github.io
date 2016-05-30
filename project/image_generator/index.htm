@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+
+	<link href="./stylesheet.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+
+<canvas id="myCanvas" height="10" width="10" style="">
+</canvas>
+
+<h1> Text to Image Generator </h1>
+
+<a href="#"><input type="text" id="filename" placeholder="files name" style="width: 100%;margin-bottom: 5px;"></a>
+<input type="number" id="width" placeholder="image width">
+<input type="number" id="height" placeholder="image height">
+<textarea class="textarea" id="spanText" placeholder="text to convert to image using #'s and .'s
+"></textarea><br><br>
+<center><button class="draw" onClick="draw()">Generate</button> <a class="draw" id="download"><button class="draw">Download</button></a></center>
+
+
+	<div class="footer">
+		Project created and is Copyright &copy; by Jakeoid 2016.
+	</div>
+
+	</div>
+
+</body>
+    <script src="./script.js"></script>
+</html>
