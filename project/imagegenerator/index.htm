@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<!-- meta -->
+		<title>Image Generator.</title>
+  	  	<meta name="keywords" content="Jakeoid,Projects">
+  	  	<meta name="author" content="Jakeoid">
+		<meta name="theme-color" content="#1d1d1d" />
+  	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="revisit-after" content="30 days">
+		<meta name="distribution" content="web">
+		<meta charset="UTF-8">
+
+		<!-- stylesheet -->
+		<link href="./stylesheet.css" type="text/css" rel="stylesheet">
+
+    	<!-- icon -->
+    	<link rel="icon" type="image/png" href="http://jakeoid.com/favicon.png" />
+	</head>
+
+	<!-- ****************** -->
+
+	<body><!-- body -->
+
+		<!-- canvas -->
+		<canvas id="myCanvas" height="10" width="10" style=""></canvas>
+		<!-- /canvas -->
+
+		<div class="container"><!-- container -->
+
+			<form><!-- form -->
+				<input type="text" autofocus id="filename" placeholder="files name" style="width: 100%;margin-bottom: 5px;">
+				<input type="number" id="width" placeholder="image width">
+				<input type="number" id="height" placeholder="image height">
+				<textarea class="textarea" id="spanText" placeholder="text to convert to image using #'s and .'s"></textarea>
+
+				<br><br>
+
+				<!-- buttons -->
+				<center>
+					<button class="draw" onClick="draw()">Generate</button> 
+					<a class="draw" id="download"><button class="draw">Download</button></a>
+				</center>
+				<!-- /buttons -->
+			</form> <!-- /form -->
+
+			<div class="footer"><!-- footer -->
+				Project created and is Copyright &copy; by Jakeoid 2016.
+			</div> <!-- /footer -->
+		</div><!-- /container -->
+
+	</body><!-- /body -->
+
+	<!-- javascript, placed at the end of the document to increase our load times! -->
+	<script src="./script.js"></script>
+
+</html>
