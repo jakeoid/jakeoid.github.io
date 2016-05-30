@@ -1,94 +1,25 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito:400,700);
+/** Import **/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-body,html {
-	color: #fff;
-	background: #1d1d1d;
+/** Global **/
 
-	margin: 0;padding: 5px;
-	text-align: justify;
-	text-transform: lowercase !important;
-}
+body,html 							{color: #fff;background: #1d1d1d;margin: 0;padding: 5px;text-align: justify;text-transform: lowercase !important;}
+body,html,button,textarea,input 	{font-family: 'Open Sans', sans-serif !important;}
+h1									{text-transform: uppercase;text-align: center;font-weight: bold;}
 
-body,html,button,textarea,input {
-	font-family: 'Nunito', sans-serif !important;
-}
+/** Global **/
+.container 							{width: 80%;margin: auto;padding: 15px;box-shadow: 0px 0px 25px rgba(0,0,0,0)}
+.footer 							{font-weight: bold;text-transform: uppercase;font-size: 12px;text-align: center;padding: 25px;}
 
-canvas {
-	background: #1d1d1d;
-	position: absolute;
-	top: 5;
-	right: 5;
+/** Canvas **/
+canvas 								{background: #1d1d1d;position: absolute;top: 5;right: 5;opacity: 0.5;border: none;padding: 15px;border-radius: 2px;}
+canvas:hover 						{opacity: 1;}
 
-	opacity: 0.5;
-	border: none;
-	padding: 15px;
-	border-radius: 2px;
-}
+/** Form **/
+input[type=number],input[type=text] {width: calc(50% - 2.8px);height: 50px;margin: 0;padding: 0;border: 0;display: inline-block;text-indent: 25px;}
+input,textarea 						{font-size: 100%;}
+.textarea 							{width: 100% !important;min-height: 300px;border: none;padding: 25px 0px 0px 25px;margin: 5px 0px 0px 0px;}
+button 								{height: 50px;background: #fff;border: none;color: #1d1d1d;padding: 0px 25px 0px 25px;margin: 0px 5px 0px 5px;text-transform: uppercase;font-weight: bold;text-align: center;border-radius: 2px;}
 
-canvas:hover {
-	opacity: 1;
-}
-
-input {
-	width: calc(50% - 2.5px);
-	height: 50px;
-
-	margin: 0;
-	padding: 0;
-	border: 0;
-	display: inline-block;
-	text-indent: 25px;
-}
-
-button {
-	height: 50px;
-
-	background: #fff;
-
-	border: none;
-
-	color: #1d1d1d;
-	padding: 0px 25px 0px 25px;
-	margin: 0px 5px 0px 5px;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: center;
-	border-radius: 2px;
-}
-
-	#download {
-	    cursor:pointer;
-	}
-
-h1 {
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: bold;
-}
-
-input,textarea {
-	font-size: 100%;
-}
-
-.textarea {
-	width: 100% !important;
-	min-height: 300px;
-	border: none;
-	padding: 25px 0px 0px 25px;
-	margin: 5px 0px 0px 0px;
-}
-
-.container {
-	width: 80%;
-	margin: auto;
-	padding: 15px;
-	box-shadow: 0px 0px 25px rgba(0,0,0,0)
-}
-
-.footer {
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 12px;
-	text-align: center;
-	padding: 25px;
-}
+/** Button1 **/
+#download 							{cursor:pointer;}
