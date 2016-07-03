@@ -1,0 +1,8 @@
+<!-- ################### Area #13. ################### -->
+
+		<div class="header"><span id="area-13" class="title">Area 13.</span></div>
+
+<a href="#/" onClick="javascript:toggleElement('14-1')"><div class="area"><span class="title-area">14-1 &middot; Example</span></div></a>
+<div id="14-1" class="solution">
+	<div class="solution-img"><img src="./png/solution/arbok.png" class="solution-image"/></div>
+</div>
