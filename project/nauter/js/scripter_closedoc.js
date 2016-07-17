@@ -3,9 +3,13 @@ var custom_snoo = false;
 var custom_logo = false;
 var custom_color = false;
 
-var offset = 75;
+var backgrounds_div = "";
 
-var addnow = "Add it now.";
+  /** ******************************************* **/
+  /** Hotfix: Announcements Offset                **/
+  /** ******************************************* **/
+
+var offset = 75;
 
 setInterval(function() {
 
@@ -18,55 +22,74 @@ setInterval(function() {
 }, 100);
 
 
+  /** ******************************************* **/
+  /** Swap Enable / Disable                       **/
+  /** ******************************************* **/
+
+var addnow = "Add it now.";
+var removenow = "Remove";
+
+var classesenable = "item-button-button";
+var classesdisable = "item-button-button remove";
+
 function swapAnnouncementsOption(){
   if(custom_announcements == true){
     custom_announcements = false;
         document.getElementById("customannouncementsbutton").innerHTML = addnow + "";
-        document.getElementById("customannouncementsbutton").className = "item-button-button";
+        document.getElementById("customannouncementsbutton").className = classesenable + "";
   } else {
     custom_announcements = true;
-        document.getElementById("customannouncementsbutton").innerHTML = "Remove";
-        document.getElementById("customannouncementsbutton").className = "item-button-button remove";
+        document.getElementById("customannouncementsbutton").innerHTML = removenow + "";
+        document.getElementById("customannouncementsbutton").className = classesdisable + "";
   }
 }
+
+/** ************** **/
 
 function swapSnooOption(){
 	if(custom_snoo == true){
 		custom_snoo = false;
   			document.getElementById("customsnoobutton").innerHTML = addnow + "";
-  			document.getElementById("customsnoobutton").className = "item-button-button";
+  			document.getElementById("customsnoobutton").className = classesenable + "";
 	} else {
 		custom_snoo = true;
-  			document.getElementById("customsnoobutton").innerHTML = "Remove";
-  			document.getElementById("customsnoobutton").className = "item-button-button remove";
+        document.getElementById("customannouncementsbutton").innerHTML = removenow + "";
+  			document.getElementById("customsnoobutton").className = classesdisable + "";
 	}
 }
+
+/** ************** **/
 
 function swapLogoOption(){
 	if(custom_logo == true){
 		custom_logo = false;
   			document.getElementById("customlogobutton").innerHTML = addnow + "";
-  			document.getElementById("customlogobutton").className = "item-button-button";
+  			document.getElementById("customlogobutton").className = classesenable + "";
 	} else {
 		custom_logo = true;
-  			document.getElementById("customlogobutton").innerHTML = "Remove";
-  			document.getElementById("customlogobutton").className = "item-button-button remove";
+        document.getElementById("customannouncementsbutton").innerHTML = removenow + "";
+  			document.getElementById("customlogobutton").className = classesdisable + "";
 	}
 }
+
+/** ************** **/
 
 function swapColorOption(){
   if(custom_color == true){
     custom_color = false;
         document.getElementById("customcolorbutton").innerHTML = addnow + "";
-        document.getElementById("customcolorbutton").className = "item-button-button";
+        document.getElementById("customcolorbutton").className = classesenable + "";
   } else {
     custom_color = true;
-        document.getElementById("customcolorbutton").innerHTML = "Remove";
-        document.getElementById("customcolorbutton").className = "item-button-button remove";
+        document.getElementById("customannouncementsbutton").innerHTML = removenow + "";
+        document.getElementById("customcolorbutton").className = classesdisable + "";
   }
 }
 
-var backgrounds_div = "";
+
+  /** ******************************************* **/
+  /** Draw Rounded Rectangles                    **/
+  /** ******************************************* **/
 
 function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
   if (typeof stroke == "undefined" ) {
@@ -94,8 +117,14 @@ function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
   }        
 }
 
+
+  /** ******************************************* **/
+  /** Redraw Sub Reddit Preview                   **/
+  /** ******************************************* **/
+
+
 function draw() {
-  	var canvas = document.getElementById("myCanvas");
+  	var canvas = document.getElementById("subredditpreview");
 	var ctx = canvas.getContext("2d");
 
 // Draw Background
@@ -153,21 +182,25 @@ function draw() {
 
 	if(custom_snoo == true){
   	
-  		ctx.globalAlpha=1;
-	ctx.fillStyle = "#eeeeee";
-	ctx.fillRect(15,32,21,21);
+    ctx.globalAlpha=1;
+    ctx.fillStyle = "#eeeeee";
+    ctx.fillRect(15,32,21,21);
 
-  	}
+  }
 
-  	if(custom_logo == true){
+  if(custom_logo == true){
   	
-  		ctx.globalAlpha=1;
-	ctx.fillStyle = "#eeeeee";
-	ctx.fillRect(39,35,34,11);
+    ctx.globalAlpha=1;
+    ctx.fillStyle = "#eeeeee";
+    ctx.fillRect(39,35,34,11);
 
-  	}
+  }
 
 }
+
+  /** ******************************************* **/
+  /** Constantly Change Background Colour         **/
+  /** ******************************************* **/
 
 setInterval(function() {
 
@@ -183,6 +216,10 @@ setInterval(function() {
 	draw();
 
 }, 100);
+
+  /** ******************************************* **/
+  /** Remove Non-HTML Colours                     **/
+  /** ******************************************* **/
 
 document.getElementById("buttons").onkeypress = function(e) {
     var chr = String.fromCharCode(e.which);
@@ -202,16 +239,13 @@ document.getElementById("backgrounds").onkeypress = function(e) {
         return false;
 };
 
-  // Get the modal
+  /** ******************************************* **/
+  /** Generate a Modal & Information              **/
+  /** ******************************************* **/
+
 var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
 var btn = document.getElementById("generate");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal 
 btn.onclick = function() {
 
 
@@ -251,19 +285,21 @@ btn.onclick = function() {
   }
 }
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
 
-function nerd() {
+  /** ******************************************* **/
+  /** Generate 'stylesheet.css'                   **/
+  /** ******************************************* **/
+
+function download() {
 
   var generated_content = "";
 
@@ -289,6 +325,7 @@ function nerd() {
     var generated_content = generated_content + "/* --- Addon: Change Subreddit's colors --- */\n\n/* Buttons */\n.morelink, .side .titlebox .md h3 a, .drop-choices a.choice:hover, .submit-page #newlink.submit.content ul.tabmenu.formtab,\n.submit_text.enabled.roundfield, body .btn, body button, .content .infobar {background-color: #" + document.getElementById("buttons").value + ";}\n\n.morelink:hover, .side .titlebox .md h3 a:hover, .btn:hover, body button:hover {background-color: #" + document.getElementById("buttons").value + ";}\n.morelink:active , .side .titlebox .md h3 a:active , .btn:active , body button:active {background-color: #" + document.getElementById("buttons").value + ";}\n\n/* Links */\n.thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title, .link .entry .buttons li a.comments,\n.link .entry .buttons li a.flairselectbtn, .link .entry .buttons li a:hover, .titlebox .tagline a.flairselectbtn, .md a,\n.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4, .sidebox.create .morelink a, a, .side:after, .usertext .bottom-area a.reddiquette,\n.wiki-page .pageactions .wikiaction-current, .tagline .submitter, .combined-search-page .search-result .search-result-header .search-title,\n.combined-search-page .search-result a, .combined-search-page .search-result a>mark, .combined-search-page .search-result .search-comments,\n.flairselector h2, .linefield .title, body .content .sitetable .link .title a:hover, .link .entry .tagline a:hover, .comment .author:hover {color: #" + document.getElementById("buttons").value + ";}\n\n/\* \-\-\- End Addon \-\-\- \*/\n";
 
   }
+
 
 var hiddenElement = document.createElement('a');
 
