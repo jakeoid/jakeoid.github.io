@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700,300,300italic);
+
+body,html {margin: 0;padding: 0; background: #eeeeee; font-family:'Roboto';color: #1c1c1c;}
+a {text-decoration: none;color: #222d45;}
+
+.project-description > a {color: #222d45;text-decoration: none;background: #fafafa;padding: 8px 10px 8px 10px;border-radius: 2px;}
+
+.header-box {height: 250px;width: 100%;z-index: 1;background: #222d45; position: absolute;top: 0;left: 0;}
+
+.container {width: calc(70% - 50px);min-height: 100%;z-index: 9999;background: #fff;margin: auto;position: absolute;top: 25;left: calc(50% - 35%);box-shadow: 0px 1px 4px rgba(0,0,0,0.14);border-radius: 2px;padding: 25px;}
+
+.project-header {text-indent: 25px;font-size: 32pt;}
+.project-description {text-align: justify;margin-top: 25px;line-height: 25px;}
+
+.nauter-preview {width: 500px;height: 300px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);margin: 25px auto;border-radius: 2px;padding: 25px;}
+.nauter-preview-canvas {width: 500px;height: 300px;border-radius: 2px;}
+.nauter-buttons {width: 40%;margin: auto;}
+.nauter-button {width: calc(50% - 62px);background: #222d45;color: #fff;font-weight: bold;padding: 20px;margin: 10px;text-align: center;display: inline-block;border-radius: 2px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);cursor: pointer;}
+
+.generate-header {font-size: 32pt;text-align: center;}
+.modal-content a {text-decoration: none;}
+
+.item {width: 80%;height: 130px;border-radius: 2px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);margin: 25px auto;padding: 10px;}
+.item-long {width: 80%;min-height: 300px;border-radius: 2px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);margin: 25px auto;padding: 10px;}
+.item-med {width: 80%;min-height: 255px;border-radius: 2px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);margin: 25px auto;padding: 10px;}
+
+.item-icon {width: 130px;height: 130px;background: url('./icon.png');float: left;border-radius: 2px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);}
+.item-icon > img {border-radius: 2px;}
+
+.item-text {width: calc(65% - 80px);height: 130px;float: right;}
+.item-button {width: calc(35% - 70px);height: 130px;float: right;}
+.item-header {font-size: 24pt;padding-top: 12px;padding-bottom: 12px;}
+.item-description {text-align: justify;}
+.item-description-long {height: 300px;}
+.item-button-button {background: #222d45;color: #fff;font-weight: bold;padding: 20px 30px 20px 30px;margin: 10px;text-align: center;display: inline-block;border-radius: 2px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);top: calc(50% - 30px);left: 20px;position: relative;transition: background-color 0.1s ease;}
+
+.author {line-height: 40px;text-align: right;}
+.author > a {text-decoration: none;color: #3d4d69;}
+
+.remove {background: #ccc;color: #1c1c1c;margin-left: 25px !important;}
+
+.descriptors-label {background: #ccc;margin: 5px;text-align: left;padding: 10px;width: 100%;border-radius: 2px;background: #eeeeee;}
+
+.footer {text-align: center;}
+
+input[type=text], textarea {outline: none;}
+
+ol {text-indent: 25px;}
+textarea {width: 100%;height: 250px;border: none;resize: none;background: #fafafa;padding: 25px;border-radius: 2px;text-align: justify;}
+
+/** ***** **/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.14);
+    line-height: 25px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 50%; /* Could be more or less, depending on screen size */
+    border-radius: 2px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/** **/
+
+input {border: 0;font-weight: bold;width: calc(100% - 120px);margin-left: 10px;height: 30px;font-size: 14px;font-family: 'Roboto', sans-serif;margin-left: 20px;text-indent: 10px;border-radius: 2px;}
+label {display: inline-block;width: 100px;text-align: right;}​
+

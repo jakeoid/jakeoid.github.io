@@ -93,16 +93,20 @@ button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30
 @media(min-width: 500px) { .ad { width: 468px !important; height: 60px !important; } }
 @media(min-width: 800px) { .ad { width: 728px !important; height: 90px !important; } }
 
+/** Menu **/
+
+/** .sidebar {left: -80px;transition: left 0.1s ease;}
+.sidebar:hover {left: 0px;} **/
+
 /** Mobile **/
 @media screen and (max-width: 480px) {
 	.container 							{width: calc(100% - 80px);padding: 0;padding-top: 100px;margin: 0px 45px 0px 40px;}
-	.sidebar 							{position: fixed;height: 90px;width: 100%;background: url('./img/bg.png'), #1d1d1d;background-repeat: no-repeat;background-size: 100%;background-position:top top;color: #fff;}
+	.sidebar 							{position: fixed;left: 0;height: 90px;width: 100%;background: url('./img/bg.png'), #1d1d1d;background-repeat: no-repeat;background-size: 100%;background-position:top top;color: #fff;}
 	.icon-menu 							{color: #fff;position: absolute;top: 0; left: calc(50% - 120px);;}
 	li 									{display: inline;padding: none;margin: 10px 15px 0px 15px;}
 }
 
 @media screen and (max-width: 1000px) {
-	.sub-header 						{display: none;}
 	.col-md-2 							{width: 100%;}
 	.col-md-6 							{width: 100%;}
 }
