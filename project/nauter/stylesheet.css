@@ -8,7 +8,6 @@
 body,html {margin: 0;padding: 0; background: #eeeeee; font-family:'Roboto';color: #1c1c1c;}
 a {text-decoration: none;color: #222d45;}
 input[type=text], textarea {outline: none;}
-.modal-content > ol > li > textarea {width: 100%;height: 250px;border: none;resize: none;background: #fafafa;padding: 25px;border-radius: 2px;text-align: justify;}
 
 /** Project **/
 
@@ -17,7 +16,7 @@ input[type=text], textarea {outline: none;}
 .project-description {text-align: justify;margin-top: 25px;line-height: 25px;}
 
 .header-box {height: 250px;width: 100%;z-index: 1;background: #222d45; position: absolute;top: 0;left: 0;}
-.container {width: calc(70% - 50px);min-height: 100%;z-index: 9999;background: #fff;margin: auto;position: absolute;top: 25;left: calc(50% - 35%);box-shadow: 0px 1px 4px rgba(0,0,0,0.14);border-radius: 2px;padding: 25px;}
+.container {width: calc(70% - 50px);z-index: 9999;background: #fff;margin: auto;position: absolute;top: 25;left: calc(50% - 35%);box-shadow: 0px 1px 4px rgba(0,0,0,0.14);border-radius: 2px;padding: 25px;}
 
 /** Preview **/
 
@@ -33,22 +32,21 @@ input[type=text], textarea {outline: none;}
 
 .generate-header {font-size: 32pt;text-align: center;}
 .modal-content a {text-decoration: none;}
+.modal-content > ol > li > textarea {width: 100%;height: 250px;border: none;resize: none;background: #fafafa;padding: 25px;border-radius: 2px;text-align: justify;}
 
 /** Item **/
 
-.item {width: 80%;height: 130px;border-radius: 2px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);margin: 25px auto;padding: 10px;}
-.item-long {min-height: 300px;}
-.item-med {min-height: 255px}
+.item {width: 80%;border-radius: 2px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);margin: 25px auto;padding: 10px;overflow:auto;}
 
 /** Item Preview **/
 
-.icon {width: 130px;height: 130px;background: url('./icon.png');float: left;border-radius: 2px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);}
+.icon {width: 130px;background: url('./icon.png');float: left;border-radius: 2px;box-shadow: 0px 1px 4px rgba(0,0,0,0.14);}
 .icon > img {border-radius: 2px;}
 
 /** Item Description **/
 
-.item-text {width: calc(65% - 80px);height: 130px;float: right;}
-.item-button-container {width: calc(35% - 70px);height: 130px;float: right;}
+.item-text {width: calc(65% - 80px);float: left;padding-left: 20px;}
+.item-button-container {width: calc(35% - 70px);float: left;}
 .item-header {font-size: 24pt;padding-top: 12px;padding-bottom: 12px;}
 .item-description {text-align: justify;}
 
@@ -76,6 +74,16 @@ input[type=text], textarea {outline: none;}
 .modal-content {background-color: #fff;margin: 5% auto;padding: 20px;width: 50%;border-radius: 2px;}
 .modal-content > ol {text-indent: 25px;}
 
-.close {color: #aaa;float: right;font-size: 28px;}
+/** Mobile **/
+@media screen and (max-width: 1150px) {
+
+    .container {width: 80%;margin: none !important;left: calc(50% - 40% - 30px);}
+    .preview {width: calc(100% - 100px);}
+    .preview-canvas {left: calc(50% - 250px);position: relative;}
+
+}
+
+.close {color: #aaa;float: left;font-size: 28px;}
 .close:hover, .close:focus {color: black;text-decoration: none;cursor: pointer;}
+
 
