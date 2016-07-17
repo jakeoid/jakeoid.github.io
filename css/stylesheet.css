@@ -18,21 +18,21 @@
 
 /** Global **/
 
-html,body 												{background: #fff;min-height: 100%;margin: 0;padding: 0;color: #1d1d1d; font-family: 'Source Sans Pro';font-weight: 300;font-size: 18px;}
+html,body 												{background: #1d1d1d;min-height: 100%;margin: 0;padding: 0;color: #1d1d1d; font-family: 'Source Sans Pro';font-weight: 300;font-size: 18px;}
 a 														{text-decoration: none;color: #2780e3;}
 small													{font-size: 50%;}
 h1,h2,h3,h4,h5,h6										{margin: 0;padding: 0;text-align: none;}
 
 /** Sidebar **/
 
-.sidebar 												{position: fixed;height: 100%;width: 100px;background: url('./img/bg.png'), #1d1d1d;background-repeat: no-repeat;color: #fff;}
+.sidebar 												{position: fixed;height: 100%;width: 100px;background: #1d1d1d;color: #fff;}
 .icon-menu 												{position: relative;top: calc(50% - 122px);padding: 0;list-style-type: none;text-align: center;text-shadow: 5px 5px 0px rgba(0,0,0,0.1)}
 .icon-menu > li 										{padding: 0px 0px 50px 0px;}
 .icon-menu a											{color: #fff;}
 
 /** Container **/
 
-.container 												{width: calc(100% - 200px);padding: 10px 50px 10px 0px;float: right;font-size: 18px;text-align: justify;}
+.container 												{width: calc(100% - 200px);background: #fff;padding: 10px 50px 10px 100px;float: right;font-size: 18px;text-align: justify;}
 .title 													{margin: 0px 0px 0px 25px;font-size: 64px;}
 .intro													{font-size: 23px;padding: 0px 0px 25px 0px;}
 
@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6										{margin: 0;padding: 0;text-align: none;}
 
 /** Button **/
 
-.button 												{background:#1d1d1d; display: block; width: 130px;height: 40px;line-height: 40px;color: #fff;text-align: center;margin: 15px 0px 30px 0px;}
+.button 												{background:#1d1d1d; display: block; width: 130px;height: 40px;line-height: 40px;color: #fff;text-align: center;margin: 10px 0px 30px 25px;}
 .button:hover											{background:#0e0e0e;}
 
 /** Well **/
@@ -57,6 +57,10 @@ h1,h2,h3,h4,h5,h6										{margin: 0;padding: 0;text-align: none;}
 /** Advertising **/
 
 .ad 													{background:#f7f7f7;margin: 0 auto;}
+
+/** Flow **/
+.col-md-2 {width: 15%;text-align: left;}
+.col-md-6 {width: 60%;}
 
 /** Legacy **/
 h2 > small 												{background: #1d1d1d;color: #fff;margin-left:15px;padding: 5px 15px 5px 15px;}
@@ -75,7 +79,7 @@ textarea												{border: 1px solid rgba(0,0,0,0.1);border-radius: 5px;width:
 :-ms-input-placeholder 									{color: #e6e6e6;}
 
 /** Button **/
-button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30px;color: #fff;}
+button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30px;margin: 20px;color: #fff;}
 
 /** Old Man **/
 .form-input-oldman										{width: calc(100% - 2px);color: #1d1d1d;font-size:30px;text-align: center;font-family: 'Open Sans', sans-serif !important;}
@@ -100,7 +104,7 @@ button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30
 
 /** Mobile **/
 @media screen and (max-width: 480px) {
-	.container 							{width: calc(100% - 80px);padding: 0;padding-top: 100px;margin: 0px 45px 0px 40px;}
+	.container 							{width: calc(100% - 60px);padding: 35px 30px 25px 30px;}
 	.sidebar 							{position: fixed;left: 0;height: 90px;width: 100%;background: url('./img/bg.png'), #1d1d1d;background-repeat: no-repeat;background-size: 100%;background-position:top top;color: #fff;}
 	.icon-menu 							{color: #fff;position: absolute;top: 0; left: calc(50% - 120px);;}
 	li 									{display: inline;padding: none;margin: 10px 15px 0px 15px;}
