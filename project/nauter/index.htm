@@ -18,27 +18,27 @@
 
 		<div class="project-description">The <a href="http://reddit.com/r/naut">&#47;r&#47;naut</a> is a theme over on reddit. The &apos;nauter&apos; as i&apos;ve called it generates a CSS file for you to use on the website or to add onto the existing reddit theme. To use simply just click what add-ons that you want and they will be generated into a CSS file.</div>
 
-		<div class="nauter-preview">
+		<div class="preview">
 
-			<canvas class="nauter-preview-canvas" id="subredditpreview" width="500" height="300"></canvas>
+			<canvas class="preview-canvas" id="subredditpreview" width="500" height="300"></canvas>
 
 		</div>
 
-		<div class="nauter-buttons">
-			<a id="generate"><div class="nauter-button">Generate</div></a>
-			<a href="javascript:void(0);" onClick="download()"><div class="nauter-button">Download</div></a>
+		<div class="buttons">
+			<a id="generate"><div class="button">Generate</div></a>
+			<a href="javascript:void(0);" onClick="download()"><div class="button">Download</div></a>
 		</div>
 
 		<br><br>
 
-		<div class="item-med">
+		<div class="item item-med">
 
-			<div class="item-icon"><img src="./icon/icon_announcement.png"></div><div class="item-button"><a href="javascript:void(0);" onClick="swapAnnouncementsOption()"><div id="customannouncementsbutton" class="item-button-button">Add it now.</div></a></div>
+			<div class="icon"><img src="./icon/icon_announcement.png"></div><div class="item-button-container"><a href="javascript:void(0);" onClick="swapAnnouncementsOption()"><div id="customannouncementsbutton" class="item-button">Add it now.</div></a></div>
 			<div class="item-text">
 				<div class="item-header">
 					Announcements.
 				</div>
-				<div class="item-description-long">
+				<div class="item-description item-description-long">
 					This add-on adds a announcement area for your sub-reddit allowing for you to link to things aswell.<br><br>You also need to add the following to the Subreddit Sidebar...<br><label class="descriptors-label">##### [Check out this wicked cool announcement](https://reddit.com/r/yourlink)</label><div class="author">Made by <a target="_blank" href="http://reddit.com/u/NighthawkSLO">/u/NighthawkSLO</a></div>
 				</div>
 			</div>
@@ -47,8 +47,8 @@
 
 		<div class="item">
 
-			<div class="item-icon"><img src="./icon/icon_customsnoo.png"></div>
-			<div class="item-button"><a href="javascript:void(0);" onClick="swapSnooOption()"><div id="customsnoobutton" class="item-button-button">Add it now.</div></a></div>
+			<div class="icon"><img src="./icon/icon_customsnoo.png"></div>
+			<div class="item-button-container"><a href="javascript:void(0);" onClick="swapSnooOption()"><div id="customsnoobutton" class="item-button">Add it now.</div></a></div>
 			<div class="item-text">
 				<div class="item-header">
 					Custom Snoo.
@@ -62,8 +62,8 @@
 
 		<div class="item">
 
-			<div class="item-icon"><img src="./icon/icon_customlogo.png"></div>
-			<div class="item-button"><a href="javascript:void(0);" onClick="swapLogoOption()"><div id="customlogobutton" class="item-button-button">Add it now.</div></a></div>
+			<div class="icon"><img src="./icon/icon_customlogo.png"></div>
+			<div class="item-button-container"><a href="javascript:void(0);" onClick="swapLogoOption()"><div id="customlogobutton" class="item-button">Add it now.</div></a></div>
 			<div class="item-text">
 				<div class="item-header">
 					Custom Logo.
@@ -75,10 +75,10 @@
 
 		</div>
 
-		<div class="item-long clearfix">
+		<div class="item item-long">
 
-			<div class="item-icon"><img src="./icon/icon_customcolour.png"></div>
-			<div class="item-button"><a href="javascript:void(0);" onClick="swapColorOption()"><div id="customcolorbutton" class="item-button-button">Add it now.</div></a></div>
+			<div class="icon"><img src="./icon/icon_customcolour.png"></div>
+			<div class="item-button-container"><a href="javascript:void(0);" onClick="swapColorOption()"><div id="customcolorbutton" class="item-button">Add it now.</div></a></div>
 			<div class="item-text">
 				<div class="item-header">
 					Custom Theme Colours.
@@ -102,14 +102,11 @@
 			Made by <a href="http://jakeoid.com">Jakeoid</a>.
 			
 		</div>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
+<div id="generated_modal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <br>
-		<div class="generate-header">Nauter <sup>&beta;0.2</sup></div>
+		<div class="generate-header">Nauter <sup>&beta;0.3</sup></div>
 	</br>
 		<ol>
   <li>Head over onto the Subreddit Settings i.e <a href="#">/r/example/about/stylesheet</a>.</li>

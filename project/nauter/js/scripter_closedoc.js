@@ -29,8 +29,8 @@ setInterval(function() {
 var addnow = "Add it now.";
 var removenow = "Remove";
 
-var classesenable = "item-button-button";
-var classesdisable = "item-button-button remove";
+var classesenable = "item-button";
+var classesdisable = "item-button remove";
 
 function swapAnnouncementsOption(){
   if(custom_announcements == true){
@@ -53,7 +53,7 @@ function swapSnooOption(){
   			document.getElementById("customsnoobutton").className = classesenable + "";
 	} else {
 		custom_snoo = true;
-        document.getElementById("customannouncementsbutton").innerHTML = removenow + "";
+        document.getElementById("customsnoobutton").innerHTML = removenow + "";
   			document.getElementById("customsnoobutton").className = classesdisable + "";
 	}
 }
@@ -67,7 +67,7 @@ function swapLogoOption(){
   			document.getElementById("customlogobutton").className = classesenable + "";
 	} else {
 		custom_logo = true;
-        document.getElementById("customannouncementsbutton").innerHTML = removenow + "";
+        document.getElementById("customlogobutton").innerHTML = removenow + "";
   			document.getElementById("customlogobutton").className = classesdisable + "";
 	}
 }
@@ -81,7 +81,7 @@ function swapColorOption(){
         document.getElementById("customcolorbutton").className = classesenable + "";
   } else {
     custom_color = true;
-        document.getElementById("customannouncementsbutton").innerHTML = removenow + "";
+        document.getElementById("customcolorbutton").innerHTML = removenow + "";
         document.getElementById("customcolorbutton").className = classesdisable + "";
   }
 }
@@ -243,7 +243,7 @@ document.getElementById("backgrounds").onkeypress = function(e) {
   /** Generate a Modal & Information              **/
   /** ******************************************* **/
 
-var modal = document.getElementById('myModal');
+var modal = document.getElementById('generated_modal');
 var btn = document.getElementById("generate");
 var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
