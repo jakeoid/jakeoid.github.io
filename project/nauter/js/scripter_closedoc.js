@@ -2,6 +2,7 @@ var custom_announcements = false;
 var custom_snoo = false;
 var custom_logo = false;
 var custom_color = false;
+var custom_readers = false;
 
 var backgrounds_div = "";
 
@@ -41,6 +42,20 @@ function swapAnnouncementsOption(){
     custom_announcements = true;
         document.getElementById("customannouncementsbutton").innerHTML = removenow + "";
         document.getElementById("customannouncementsbutton").className = classesdisable + "";
+  }
+}
+
+/** ************** **/
+
+function swapReaderOption(){
+  if(custom_readers == true){
+    custom_readers = false;
+        document.getElementById("customreaderbutton").innerHTML = addnow + "";
+        document.getElementById("customreaderbutton").className = classesenable + "";
+  } else {
+    custom_readers = true;
+        document.getElementById("customreaderbutton").innerHTML = removenow + "";
+        document.getElementById("customreaderbutton").className = classesdisable + "";
   }
 }
 
@@ -178,11 +193,10 @@ function draw() {
 	ctx.fillStyle = "#ffffff";
 	roundRect(ctx, 6, offset, 367, 300, 2, true, 0);
 
-// Draw Logo
+// Draw Options
 
 	if(custom_snoo == true){
   	
-    ctx.globalAlpha=1;
     ctx.fillStyle = "#eeeeee";
     ctx.fillRect(15,32,21,21);
 
@@ -190,9 +204,15 @@ function draw() {
 
   if(custom_logo == true){
   	
-    ctx.globalAlpha=1;
     ctx.fillStyle = "#eeeeee";
     ctx.fillRect(39,35,34,11);
+
+  }
+
+  if(custom_readers == true){
+    
+    ctx.fillStyle = "#eeeeee";
+    roundRect(ctx, 382, 85, 80, 18, 2, true, false);
 
   }
 
@@ -249,7 +269,7 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
 
 
-  if(custom_announcements != true && custom_snoo != true && custom_logo != true && custom_color != true){
+  if(custom_announcements != true && custom_snoo != true && custom_logo != true && custom_color != true && custom_readers != true){
     alert("You haven't selected any options.");
   }else{
 
@@ -277,6 +297,12 @@ btn.onclick = function() {
   if(custom_color == true){
 
     var generated_content = generated_content + "/* --- Addon: Change Subreddit's colors --- */\n\n/* Buttons */\n.morelink, .side .titlebox .md h3 a, .drop-choices a.choice:hover, .submit-page #newlink.submit.content ul.tabmenu.formtab,\n.submit_text.enabled.roundfield, body .btn, body button, .content .infobar {background-color: #" + document.getElementById("buttons").value + ";}\n\n.morelink:hover, .side .titlebox .md h3 a:hover, .btn:hover, body button:hover {background-color: #" + document.getElementById("buttons").value + ";}\n.morelink:active , .side .titlebox .md h3 a:active , .btn:active , body button:active {background-color: #" + document.getElementById("buttons").value + ";}\n\n/* Links */\n.thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title, .link .entry .buttons li a.comments,\n.link .entry .buttons li a.flairselectbtn, .link .entry .buttons li a:hover, .titlebox .tagline a.flairselectbtn, .md a,\n.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4, .sidebox.create .morelink a, a, .side:after, .usertext .bottom-area a.reddiquette,\n.wiki-page .pageactions .wikiaction-current, .tagline .submitter, .combined-search-page .search-result .search-result-header .search-title,\n.combined-search-page .search-result a, .combined-search-page .search-result a>mark, .combined-search-page .search-result .search-comments,\n.flairselector h2, .linefield .title, body .content .sitetable .link .title a:hover, .link .entry .tagline a:hover, .comment .author:hover {color: #" + document.getElementById("buttons").value + ";}\n\n/\* \-\-\- End Addon \-\-\- \*/\n";
+
+  }
+
+  if(custom_readers == true){
+
+    var generated_content = generated_content + "/\* \-\-\- Addon\: Custom Subscribers & User Here  \-\-\- \*/\n\ndiv.titlebox span.number\:after \{\ncontent\:\" " + document.getElementById("subscribers_text").value + "\"\n\}\n\n.titlebox .users-online .number\:after \{\ncontent\:\" " + document.getElementById("here_text").value + "\"\n\}\n\n/\* \-\-\- End Addon \-\-\- \*/\n";
 
   }
 
@@ -323,6 +349,12 @@ function download() {
   if(custom_color == true){
 
     var generated_content = generated_content + "/* --- Addon: Change Subreddit's colors --- */\n\n/* Buttons */\n.morelink, .side .titlebox .md h3 a, .drop-choices a.choice:hover, .submit-page #newlink.submit.content ul.tabmenu.formtab,\n.submit_text.enabled.roundfield, body .btn, body button, .content .infobar {background-color: #" + document.getElementById("buttons").value + ";}\n\n.morelink:hover, .side .titlebox .md h3 a:hover, .btn:hover, body button:hover {background-color: #" + document.getElementById("buttons").value + ";}\n.morelink:active , .side .titlebox .md h3 a:active , .btn:active , body button:active {background-color: #" + document.getElementById("buttons").value + ";}\n\n/* Links */\n.thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title, .link .entry .buttons li a.comments,\n.link .entry .buttons li a.flairselectbtn, .link .entry .buttons li a:hover, .titlebox .tagline a.flairselectbtn, .md a,\n.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4, .sidebox.create .morelink a, a, .side:after, .usertext .bottom-area a.reddiquette,\n.wiki-page .pageactions .wikiaction-current, .tagline .submitter, .combined-search-page .search-result .search-result-header .search-title,\n.combined-search-page .search-result a, .combined-search-page .search-result a>mark, .combined-search-page .search-result .search-comments,\n.flairselector h2, .linefield .title, body .content .sitetable .link .title a:hover, .link .entry .tagline a:hover, .comment .author:hover {color: #" + document.getElementById("buttons").value + ";}\n\n/\* \-\-\- End Addon \-\-\- \*/\n";
+
+  }
+
+  if(custom_readers == true){
+
+    var generated_content = generated_content + "/\* \-\-\- Addon\: Custom Subscribers & User Here  \-\-\- \*/\n\ndiv.titlebox span.number\:after \{\ncontent\:\" " + document.getElementById("subscribers_text").value + "\"\n\}\n\n.titlebox .users-online .number\:after \{\ncontent\:\" " + document.getElementById("here_text").value + "\"\n\}\n\n/\* \-\-\- End Addon \-\-\- \*/\n";
 
   }
 
