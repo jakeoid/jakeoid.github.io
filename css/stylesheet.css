@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6										{margin: 0;padding: 0;text-align: none;}
 
 /** Advertising **/
 
-.ad 													{background:#f7f7f7;margin: 0 auto;}
+.ad 													{margin: 0 auto;}
 
 /** Flow **/
 .col-title {width: 20%;text-align: left;display: inline-block;}
@@ -97,8 +97,10 @@ button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30
 
 /** Ad **/
 
-@media(min-width: 500px) { .ad { width: 468px !important; height: 60px !important; } }
-@media(min-width: 800px) { .ad { width: 728px !important; height: 90px !important; } }
+@media(min-width: 500px) { .ad { width: 468px !important; height: 80px !important; } }
+@media(min-width: 800px) { .ad { width: 728px !important; height: 110px !important; } }
+
+.ad > label {font-weight: 800;font-size: 12px;}
 
 /** Menu **/
 
