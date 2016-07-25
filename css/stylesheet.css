@@ -45,6 +45,8 @@ h1,h2,h3,h4,h5,h6										{margin: 0;padding: 0;text-align: none;}
 .button 												{background:#1d1d1d; display: block; width: 130px;height: 40px;line-height: 40px;color: #fff;text-align: center;margin: 10px 0px 30px 25px;}
 .button:hover											{background:#0e0e0e;}
 
+.col-link > .button 									{margin-left: calc(100% - 65px) !important;}
+
 /** Well **/
 
 .well 													{padding: 50px 25px 120px 25px;}
@@ -59,8 +61,9 @@ h1,h2,h3,h4,h5,h6										{margin: 0;padding: 0;text-align: none;}
 .ad 													{background:#f7f7f7;margin: 0 auto;}
 
 /** Flow **/
-.col-md-2 {width: 15%;text-align: left;}
-.col-md-6 {width: 60%;}
+.col-title {width: 20%;text-align: left;display: inline-block;}
+.col-description {width: 60%;padding: 25px 0px 0px 0px;display: inline-block;}
+.col-link {width: 10%;text-align: center;display: inline-block;}
 
 /** Legacy **/
 h2 > small 												{background: #1d1d1d;color: #fff;margin-left:15px;padding: 5px 15px 5px 15px;}
@@ -111,8 +114,12 @@ button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30
 }
 
 @media screen and (max-width: 1000px) {
-	.col-md-2 							{width: 100%;}
-	.col-md-6 							{width: 100%;}
+
+	.col-title 							{width: 100%;}
+	.col-description 					{width: 100%;}
+	.col-link 							{width: 100%;}
+	.col-link > .button 				{margin-left: calc(50% - 65px) !important;}
+
 }
 
 /**
