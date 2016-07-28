@@ -95,6 +95,10 @@ button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30
 
 #species												{font-weight: bold;font-size: 32px;}
 
+/** **/
+
+.content > label 										{font-weight: bold;font-size: 14px;text-transform: uppercase;padding: 15px;}
+
 /** Ad **/
 
 @media(min-width: 500px) { .ad { width: 468px !important; height: 80px !important; } }
