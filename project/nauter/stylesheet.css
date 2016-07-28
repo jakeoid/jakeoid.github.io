@@ -78,6 +78,8 @@ input[type=text], textarea {outline: none;}
 .modal-content {background-color: #fff;margin: 5% auto;padding: 20px;width: 50%;border-radius: 2px;}
 .modal-content > ol {text-indent: 25px;}
 
+.item-description > .block > input::after {content: '#';}
+
 /** Mobile **/
 @media screen and (max-width: 1150px) {
 
