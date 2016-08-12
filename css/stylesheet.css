@@ -11,6 +11,7 @@
 
 /** Import **/
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
 /** Debug **/
 
@@ -128,6 +129,7 @@ td {text-indent: 25px;border-top-right-radius: 2px;border-bottom-right-radius: 2
 
 /** Mobile **/
 @media screen and (max-width: 480px) {
+	body 								{font-family: 'Roboto', 'Source Sans Pro', sans-serif;}
 	.container 							{width: calc(100% - 60px);padding: 35px 30px 25px 30px;}
 	.sidebar 							{position: fixed;left: 0;height: 90px;width: 100%;background: url('./img/bg.png'), #1d1d1d;background-repeat: no-repeat;background-size: 100%;background-position:top top;color: #fff;}
 	.icon-menu 							{color: #fff;position: absolute;top: 0; left: calc(50% - 120px);;}
