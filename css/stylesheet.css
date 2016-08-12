@@ -74,7 +74,7 @@ table 													{width: 100%;border: none;}
 /** Input **/
 input[type=text] 										{border:none;height: 50px;text-indent: 25px;}
 .checkbox												{background: #000 !important;}
-textarea												{border: 1px solid rgba(0,0,0,0.1);border-radius: 5px;width: 100%;min-height: 200px;font-size: 18px;}
+textarea												{border: 0px solid transparent;background:rgba(0,0,0,0.01);padding: 25px;width: calc(100% - 50px);min-height: 200px;font-size: 18px;}
 
 ::-webkit-input-placeholder 							{color: #e6e6e6;}
 :-moz-placeholder 										{color: #e6e6e6;}
@@ -105,6 +105,20 @@ button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30
 @media(min-width: 800px) { .ad { width: 728px !important; height: 110px !important; } }
 
 .ad > label {font-weight: 800;font-size: 12px;}
+
+/** Table **/
+
+th {text-align: center;font-weight: bold !important;}
+
+td {text-indent: 25px;border-top-right-radius: 2px;border-bottom-right-radius: 2px;}
+
+/** Console Compat **/
+
+.console {background: #f0f0f0;font-weight: bold;}
+.disclaimer {font-size: 12px;}
+.statement {text-align: center;}
+
+.round {border-top-right-radius: 2px;border-bottom-right-radius: 2px;}
 
 /** Menu **/
 
