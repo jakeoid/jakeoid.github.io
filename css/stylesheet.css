@@ -101,6 +101,9 @@ button 													{background: #1d1d1d;border: none;padding: 20px 30px 20px 30
 
 .content > label 										{font-weight: bold;font-size: 14px;text-transform: uppercase;padding: 15px;}
 
+/** Error Message **/
+.error-message 											{width: 100%;padding: 10px;background: #ed3333;color: #fff;text-align: center;}
+
 /** Ad **/
 
 @media(min-width: 500px) { .ad { width: 468px !important; height: 80px !important; } }
