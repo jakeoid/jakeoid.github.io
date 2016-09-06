@@ -1,67 +1,78 @@
 <html>
-	<head>
-		<!-- meta -->
-		<title>Image Generator.</title>
-  	  	<meta name="keywords" content="Jakeoid,Projects">
-  	  	<meta name="author" content="Jakeoid">
-		<meta name="theme-color" content="#1d1d1d" />
-  	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="revisit-after" content="30 days">
-		<meta name="distribution" content="web">
-		<meta charset="UTF-8">
+<head>
+	<!-- meta -->
+	<title>Image Generator.</title>
+	<meta name="keywords" content="Jakeoid,Projects">
+	<meta name="author" content="Jakeoid">
+	<meta name="theme-color" content="#1d1d1d" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="revisit-after" content="30 days">
+	<meta name="distribution" content="web">
+	<meta charset="UTF-8">
 
-		<!-- stylesheet -->
-		<link href="./stylesheet.css" type="text/css" rel="stylesheet">
+	<!-- stylesheet -->
+	<link href="./stylesheet.css" type="text/css" rel="stylesheet">
 
-    	<!-- icon -->
-    	<link rel="icon" type="image/png" href="http://jakeoid.com/favicon.png" />
-	</head>
+	<!-- icon -->
+	<link rel="icon" type="image/png" href="http://jakeoid.com/favicon.png" />
+</head>
 
-	<!-- ****************** -->
+<!-- ****************** -->
 
-	<body><!-- body -->
+<body><!-- body -->
 
-		<!-- canvas -->
-		<canvas id="myCanvas" height="10" width="10" style=""></canvas>
-		<!-- /canvas -->
+	<!-- canvas -->
+	<canvas id="myCanvas" height="10" width="10" style=""></canvas>
+	<!-- /canvas -->
 
-		<div class="container"><!-- container -->
+	<div class="container"><!-- container -->
 
-			<!-- description -->
-			<p style="font-style: italic;" class="description">
-				The Text to Image Generator is a resource that was created to serve a very specific purpose, that being the ability to convert a set of text (in a table) to an image for a later resource on Jakeoid. As I worked on it people around me grew interested and as a result it was published with the little to no documentation. <br><br>Henceforth in order to create an image in this resource you use a series of #'s and .'s. In order to display a pixel (turn it on) you place a "#". You can turn on and off pixels at will but then when it comes time to skip pixels (leave a box's worth gap) you place a ".". Another thing to be clear with is to make sure your image width &amp; height are correct enough to fit your series of #'s and .'s.
-				<div class="oneliner"></div>
-			</p>
-			<!-- /description -->
+		<!-- description -->
+		<p style="font-style: italic;" class="description">
+			The Text to Image Generator is a resource that was created to serve a very specific purpose, that being the ability to convert a set of text (in a table) to an image for a later resource on Jakeoid. As I worked on it people around me grew interested and as a result it was published with the little to no documentation. <br><br>Henceforth in order to create an image in this resource you use a series of #'s and .'s. In order to display a pixel (turn it on) you place a "#". You can turn on and off pixels at will but then when it comes time to skip pixels (leave a box's worth gap) you place a ".". Another thing to be clear with is to make sure your image width &amp; height are correct enough to fit your series of #'s and .'s.
+			<div class="oneliner"></div>
+		</p>
+		<!-- /description -->
 
-			<br>
+		<br>
 
-			<!-- form -->
-				<input type="text" autofocus id="filename" placeholder="files name" style="width: 100%;margin-bottom: 5px;">
-				<input type="number" id="width" placeholder="image width">
-				<input type="number" id="height" placeholder="image height">
-				<textarea class="textarea" id="spanText" placeholder="text to convert to image using #'s and .'s"></textarea>
+		<!-- form -->
+		<input type="text" autofocus id="filename" placeholder="files name" style="width: 100%;margin-bottom: 5px;">
+		<input type="number" id="width" placeholder="image width">
+		<input type="number" id="height" placeholder="image height">
+		<textarea class="textarea" id="spanText" placeholder="text to convert to image using #'s and .'s"></textarea>
 
-				<br><br>
+		<br><br>
 
-				<!-- buttons -->
-				<center>
-					<button class="draw" type="button" onClick="draw()">Generate</button> 
-					<a class="draw" id="download"><button type="button" class="draw">Download</button></a>
-				</center>
-				<!-- /buttons -->
-			<!-- /form -->
+		<!-- buttons -->
+		<center>
+			<button class="draw" type="button" onClick="draw()">Generate</button> 
+			<a class="draw" id="download"><button type="button" class="draw">Download</button></a>
+		</center>
+		<!-- /buttons -->
+		<!-- /form -->
 
-			<div class="footer"><!-- footer -->
-				Project created and is Copyright &copy; by <a href="http://jakeoid.com">Jakeoid</a> 2016.<br><br>
-				<a href="http://jakeoid.com/project/">&larr; Return to Jakeoid.com</a>
-			</div> <!-- /footer -->
-		</div><!-- /container -->
+		<div class="footer"><!-- footer -->
+			Project created and is Copyright &copy; by <a href="http://jakeoid.com">Jakeoid</a> 2016.<br><br>
+			<a href="http://jakeoid.com/project/">&larr; Return to Jakeoid.com</a>
+		</div> <!-- /footer -->
+	</div><!-- /container -->
 
-	</body><!-- /body -->
+</body><!-- /body -->
 
-	<!-- javascript, placed at the end of the document to increase our load times! -->
-	<script src="./script.js"></script>
+<!-- javascript, placed at the end of the document to increase our load times! -->
+<script src="./script.js"></script>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-68645606-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
 
 </html>

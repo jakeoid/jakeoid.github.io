@@ -1,0 +1,144 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700';
+
+.author {
+  background: #455070;
+  color: #fff;
+  position:absolute;
+  bottom:0;
+  right:0;
+
+  padding: 15px;
+  text-align: right;
+}
+.score {
+  color: #fff ;
+  position:absolute;
+  bottom:0;
+  left:0;
+  text-align: left;
+
+  padding: 15px;
+  background: #455070;
+}
+
+.author, .score {
+  margin: 10px;
+  border-radius: 2px;
+}
+
+.author > a, .score > a {
+  color: #fff !important;
+}
+body,html{
+  background: #ffffff;
+  color: #455070;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  text-align: justify;
+}
+a{
+  text-decoration: none;
+  color: #455070;
+}
+.yep {
+  display: none;
+  -webkit-transition: none;
+  display: none;
+  transition: none;
+
+  position: relative;
+  height: 50px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 2px;
+  text-align: center;
+  color: #fff;
+  background: #455070;
+}
+.nope {
+  line-height: 1.5;
+  -webkit-transition: none;
+  display: none;
+  transition: none;
+
+  position: relative;
+  height: 50px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 2px;
+  text-align: center;
+  color: #1d1d1d;
+  background: #ededed;
+}
+.items {
+  display: none;
+}
+.test-skills {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.character {
+
+  font-size: 3.4em;
+}
+
+.masu-symbol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.submit {
+  display: none;
+}
+input {
+  outline: none;
+  border: 0;
+  background: #455070;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  
+}
+*:focus {
+  outline: none;
+}
+.container {width: 50%;margin: auto;position: relative;}
+
+#outPopUp {
+  position: absolute;
+  width: 800px;
+  height: 440px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -225px 0 0 -445px;
+
+  padding: 25px;
+
+  background: #1b1b1b;
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
+}
+
+td {
+  width: 50%;
+}
+
+.intro, th {
+  text-align: center;
+}
+
+.exit {
+  position: relative;
+  right: 0;
+  top: 0;
+
+  float: right;
+}
+
+.changeto {background: #455070;border-radius: 2px;color: #fff;padding: 6px 12px;font-size: 16px;text-transform: uppercase;font-weight: bold;display: inline;}
