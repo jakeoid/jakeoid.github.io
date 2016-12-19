@@ -2,7 +2,7 @@
 
 ##error
 
-This website's source code has been discontinued from public avaliablity as of Mon 14th November, 2016. Thank you for sharing and interest in the older versions of this website and I hope to continue serving you on Jakeoid.com with other revisions of the website in future.
+This website's source code has been discontinued from public availability as of Mon 14th November, 2016. Thank you for sharing and interest in the older versions of this website and I hope to continue serving you on Jakeoid.com with other revisions of the website in future.
 
 ##about
 
